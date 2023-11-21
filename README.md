@@ -1,4 +1,4 @@
-Following the guide from [[https://www.youtube.com/watch?v=wU8hQvU8aKM&ab_channel=LoganSmith|this]] video, I wanted to take notes and investigate some other sources to understand it better.
+Following the guide from ![this video](https://www.youtube.com/watch?v=wU8hQvU8aKM&ab_channel=LoganSmith), I wanted to take notes and investigate some other sources to understand it better.
 # Rust
 ## Structure
 Experiment using type erasure. Create a struct that holds a reference to something that implements `trait Speak`.
@@ -121,7 +121,7 @@ A `vtable` has some differences however.
 
 https://articles.bchlr.de/traits-dynamic-dispatch-upcasting
 
-![imgs/Screenshot 2023-11-21 at 12.49.16 pm.png|400]
+![Screenshot](imgs/Screenshot 2023-11-21 at 12.49.16 pm.png)
 The article here also mentions that the size and alignment are needed to implement `std::mem::size_of_val` and `std::mem::align_of_val`, as well as for codegen. 
 
 There are more implications for upcasting in Rust vs OO languages. If we have a variable of type `&dyn SubTrait`, we cannot pass it to a function that takes a `&dyn SuperTrait` because to create the `vtable` for this super-trait-object, we must know the concrete type, which the compiler does not. 
