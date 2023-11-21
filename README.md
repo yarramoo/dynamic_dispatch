@@ -1,4 +1,4 @@
-Following the guide from ![this video](https://www.youtube.com/watch?v=wU8hQvU8aKM&ab_channel=LoganSmith), I wanted to take notes and investigate some other sources to understand it better.
+Following the guide from [this video](https://www.youtube.com/watch?v=wU8hQvU8aKM&ab_channel=LoganSmith), I wanted to take notes and investigate some other sources to understand it better.
 # Rust
 ## Structure
 Experiment using type erasure. Create a struct that holds a reference to something that implements `trait Speak`.
