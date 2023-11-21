@@ -121,7 +121,7 @@ A `vtable` has some differences however.
 
 https://articles.bchlr.de/traits-dynamic-dispatch-upcasting
 
-![Screenshot]("imgs/Screenshot 2023-11-21 at 12.49.16 pm.png")
+![Screenshot]("images/screenshot.png")
 
 The article here also mentions that the size and alignment are needed to implement `std::mem::size_of_val` and `std::mem::align_of_val`, as well as for codegen. 
 
